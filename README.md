@@ -20,8 +20,13 @@ Bitcoin.bip69 = require('bip69')
 Bitcoin.base58 = require('base58')
 Bitcoin.base58check = require('base58check')
 Bitcoin.Buffer = Buffer
+Bitcoin.message = require('bitcoinjs-message')
+Bitcoin.lnurl = require('js-lnurl')
 Bitcoin.merkleLib = require('merkle-lib')
 
 module.exports = Bitcoin
 ```
-Accessible in browser via `Bitcoin` global
+
+used in browser via `<script src="https://cdn.jsdelivr.net/gh/legalizemath/bitcoinjs-web-lib@master/bitcoinjs-lib-browserified.js"></script>`
+
+Which then becomes available via `Bitcoin` global
