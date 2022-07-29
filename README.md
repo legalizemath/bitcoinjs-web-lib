@@ -11,7 +11,7 @@ npm i bitcoinjs-lib bech32 bip21 bip32@1.0.4 bip38 bip39 bip44 bip68 bip69 base5
 const Bitcoin = require('bitcoinjs-lib')
 Bitcoin.bech32 = require('bech32')
 Bitcoin.bip21 = require('bip21')
-Bitcoin.bip32 = require('bip32')
+Bitcoin.bip32 = require('bip32') // how to avoid "ecc.isPoint is not a function" w/ v3+ needing tiny-secp256k1??
 Bitcoin.bip38 = require('bip38')
 Bitcoin.bip39 = require('bip39')
 Bitcoin.bip44 = require('bip44')
@@ -21,12 +21,13 @@ Bitcoin.base58 = require('base58')
 Bitcoin.base58check = require('base58check')
 Bitcoin.Buffer = Buffer
 Bitcoin.message = require('bitcoinjs-message')
+Bitcoin.eccrypto = require('eccrypto')
 Bitcoin.lnurl = require('js-lnurl')
 Bitcoin.merkleLib = require('merkle-lib')
 
 module.exports = Bitcoin
 ```
 
-used in browser via `<script src="https://cdn.jsdelivr.net/gh/legalizemath/bitcoinjs-web-lib@master/bitcoinjs-lib-browserified.js"></script>`
+used in browser via `<script src="https://cdn.jsdelivr.net/gh/legalizemath/bitcoinjs-web-lib@latest/bitcoinjs-lib-browserified.js"></script>`
 
 Which then becomes available via `Bitcoin` global
