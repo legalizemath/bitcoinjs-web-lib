@@ -4,7 +4,7 @@ bip32 1.0.4 used bc new ones require wrapping tiny-secp256k1 which gives me erro
 
 ```
 npm i -g browserify uglify
-npm i bitcoinjs-lib bech32 bip21 bip32@1.0.4 bip38 bip39 bip44 bip68 bip69 base58 base58check merkle-lib
+npm i bitcoinjs-lib bech32 bip21 bip32@1.0.4 bip38 bip39 bip44 bip68 bip69 base58 base58check bitcoinjs-message js-lnurl merkle-lib
 ```
 
 ```
