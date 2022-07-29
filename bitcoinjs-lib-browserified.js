@@ -66108,14 +66108,15 @@ Bitcoin.bip69 = require('bip69')
 Bitcoin.base58 = require('base58')
 Bitcoin.base58check = require('base58check')
 Bitcoin.Buffer = Buffer
-Bitcoin.merkleLib = require('merkle-lib')
 Bitcoin.message = require('bitcoinjs-message')
 Bitcoin.lnurl = require('js-lnurl')
+Bitcoin.merkleLib = require('merkle-lib')
+
 
 module.exports = Bitcoin
 
 // npm i -g browserify uglifyjs
-// npm i bitcoinjs-lib bech32 bip21 bip32@1.0.4 bip38 bip39 bip44 bip68 bip69 base58 base58check merkle-lib
+// npm i bitcoinjs-lib bech32 bip21 bip32@1.0.4 bip38 bip39 bip44 bip68 bip69 base58 base58check bitcoinjs-message js-lnurl merkle-lib
 // browserify -r . --standalone Bitcoin > bitcoinjs-lib-browserified.js
 // uglifyjs -c --mangle reserved=['BigInteger','ECPair','Point'] bitcoinjs-lib-browserified.js > bitcoinjs-lib-browserified.min.js
 
