@@ -28,6 +28,8 @@ Bitcoin.merkleLib = require('merkle-lib')
 module.exports = Bitcoin
 ```
 
-used in browser via `<script src="https://cdn.jsdelivr.net/gh/legalizemath/bitcoinjs-web-lib@latest/bitcoinjs-lib-browserified.js"></script>`
+used in browser via `<script src="https://cdn.jsdelivr.net/gh/legalizemath/bitcoinjs-web-lib@8b2b863981d17c3807f3535cf0a1a8fd24652915/bitcoinjs-lib-browserified.js"></script>`
+
+replace 8b2b863981d17c3807f3535cf0a1a8fd24652915 with whatever commit hash version needed
 
 Which then becomes available via `Bitcoin` global
